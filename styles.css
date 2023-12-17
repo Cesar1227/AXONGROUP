@@ -1,0 +1,103 @@
+body {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+h1 {
+    font-size: 25pt;
+}
+
+.container-md {
+    margin-top: 0;
+}
+
+nav {
+    background-color: #00135b !important;
+    height: 20vh;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+#btn_cargarDatos {
+    background-color: #ffffff;
+    border-color: #003ff8;
+    color: #003ff8;
+}
+
+#btn_cargarDatos:hover {
+    background-color: #003ff8;
+    color: #ffffff;
+}
+
+.lbl_recomendation {
+    font-size: 10pt;
+}
+
+a {
+    text-decoration: none;
+}
+
+.content {
+    padding-top: 4%;
+    background-color: #f4f7fc;
+    padding-left: 10px;
+}
+
+/* Estilos personalizados para el árbol */
+.tree {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tree li {
+    margin: 0;
+    padding: 10px 0;
+    position: relative;
+}
+
+.tree li::before {
+    display: none;
+    /* Oculta la línea vertical */
+}
+
+.tree li::after {
+    display: none;
+    /* Oculta la línea horizontal y el cuadro */
+}
+
+.tree li:last-child::after {
+    display: none;
+    /* Oculta el cuadro después del último hijo */
+}
+
+/* Estilos específicos para el árbol deseado */
+.tree li>ul {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+/* Añadir iconos de expansión/cierre */
+.tree li.collapsed>ul {
+    display: none;
+    /* Oculta los hijos cuando está colapsado */
+}
+
+.tree li.expanded>ul {
+    display: block;
+    /* Muestra los hijos cuando está expandido */
+}
+
+.tree li.collapsed>.toggle::after {
+    content: '\25B8';
+    /* Icono de expansión (triángulo hacia la derecha) */
+}
+
+.tree li.expanded>.toggle::after {
+    content: '\25BE';
+    /* Icono de cierre (triángulo hacia abajo) */
+}
+
+/* Termina Estilos personalizados para el árbol */

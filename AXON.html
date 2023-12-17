@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Gráfica</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body class="">
+    <div class="container-md">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand">
+                    <h1>RENOMBRADO AUTOMÁTICO DE SEÑALES</h1>
+                </a>
+                <form class="d-flex">
+                    <button id="btn_cargarDatos" class="btn btn-outline-success" type="button"
+                        onclick="cargarDatos()">Cargar Datos</button>
+                </form>
+            </div>
+        </nav>
+
+        <div class="content">
+
+            <div class="row mb-3">
+                <div class="col-12 mb-3">
+                    <h2>Filtrar por Expresión Regular</h2>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="col-md-12">
+                        <label for="expresionInput" class="form-label">Expresión Regular:</label>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                            <input type="text" class="form-control" id="expresionInput">
+
+                        </div>
+
+                        <div class="col-md-3">
+                            <button type="button" class="btn btn-primary"
+                                onclick="buscarConExpresionRegular()">Filtrar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1">
+                    <div class="col-sm-1">
+                        <label for="expresionInput" class="form-label"></label>
+                    </div>
+                    <div class="row mt-3">
+                        <label> ==> </label>
+                    </div>
+
+                </div>
+
+                <div class="col-md-5">
+                    <div class="col-md-12">
+                        <label for="capacidadInput" class="form-label">Capacidad de Filtrado:</label>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-8">
+                            <input type="text" class="form-control" id="capacidadInput" readonly>
+                        </div>
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-primary" onclick="calcularMetrica()">Calcular</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-6">
+                    <div class="row mt-3 mb-3">
+                        <h3>Estructura de arbol</h3>
+                        <label class="lbl_recomendation">(Doble click para desplegar)</label>
+                    </div>
+                    <div id="resultado"></div>
+                    <div id="estructuraArbol" class="tree"></div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mt-3 mb-3">
+                        <div class="col-md-8">
+                            <h3>Expresiones candidatas</h3>
+                        </div>
+
+                        <div class="col-md-4">
+                            <button type="button" class="btn btn-primary"
+                                onclick="visualizarExpresionesCandidatas()">Generar</button>
+                        </div>
+
+                    </div>
+                    <div class="row">
+
+                    </div>
+                    <div class="mt-5 mb-3" id="listExpresionesCandidatas">
+                        <div class="accordion" id="accordionPanelsStayOpen">
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+        <script src="./script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jstree/3.3.12/jstree.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

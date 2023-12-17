@@ -1,0 +1,25 @@
+LR RELE: loc
+POS SEC TRA: SEC_X
+POS INT: INTA_X
+POS INT_1: INTB_X
+Disparo Proteccion: Op
+Arranque Proteccion: C1.*str
+RS LED: LLN0.*ST.*LED
+ARCHIVO CREADO: RcdMade
+CREANDO ARCHIVO: RcdStr
+IO_1: Ind1
+IO_2: Ind2
+IO_3: Ind3
+IO_4: Ind4
+IO_5: Ind5
+IO_6: Ind6
+CMD RS LED: LLN0.*CO
+CMD INT: CSWI2
+CMD INT_1: CSWI3
+CMD SEC: CSWI1
+IR: A\$phsA
+IS: A\$phsB
+IT: A\$phsC
+VA: PhV.*phsA
+VB: PhV.*phsB
+VC: PhV.*phsC

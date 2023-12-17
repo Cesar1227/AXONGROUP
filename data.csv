@@ -1,0 +1,26 @@
+NOMBRE,MMSPATH
+LR RELE,AXONBAYApplication/LLN0$ST$Loc$stVal
+POS SEC TRA,AXONBAYControl/SEC_XSWI1$ST$Pos$stVal
+POS INT,AXONBAYControl/INTA_XCBR1$ST$Pos$stVal
+POS INT_1,AXONBAYControl/INTB_XCBR2$ST$Pos$stVal
+Disparo Proteccion,AXONBAYProtections/PTOC1$ST$Op$general
+Arranque Proteccion,AXONBAYProtections/PTOC1$ST$Str$general
+RS LED,AXONBAYApplication/LLN0$ST$LEDRs$stVal
+ARCHIVO CREADO,AXONBAYProtections/RDRE1$ST$RcdMade$stVal
+CREANDO ARCHIVO,AXONBAYProtections/RDRE1$ST$RcdStr$stVal
+IO_1,AXONBAYProcessMonitor/GGIO1$ST$Ind1$stVal
+IO_2,AXONBAYProcessMonitor/GGIO1$ST$Ind2$stVal
+IO_3,AXONBAYProcessMonitor/GGIO1$ST$Ind3$stVal
+IO_4,AXONBAYProcessMonitor/GGIO1$ST$Ind4$stVal
+IO_5,AXONBAYProcessMonitor/GGIO1$ST$Ind5$stVal
+IO_6,AXONBAYProcessMonitor/GGIO1$ST$Ind6$stVal
+CMD RS LED,AXONBAYApplication/LLN0$CO$LEDRs
+CMD INT,AXONBAYControl/INTA_CSWI2$CO$Pos
+CMD INT_1,AXONBAYControl/INTB_CSWI3$CO$Pos
+CMD SEC,AXONBAYControl/SEC_CSWI1$CO$Pos
+IR,AXONBAYMeasurement/MMXU1$MX$A$phsA$cVal$mag$f
+IS,AXONBAYMeasurement/MMXU1$MX$A$phsB$cVal$mag$f
+IT,AXONBAYMeasurement/MMXU1$MX$A$phsC$cVal$mag$f
+VA,AXONBAYMeasurement/MMXU1$MX$PhV$phsA$cVal$mag$f
+VB,AXONBAYMeasurement/MMXU1$MX$PhV$phsB$cVal$mag$f
+VC,AXONBAYMeasurement/MMXU1$MX$PhV$phsC$cVal$mag$f
